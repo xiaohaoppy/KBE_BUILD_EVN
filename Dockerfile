@@ -5,7 +5,7 @@
 FROM centos
 MAINTAINER haixiao <xiaohaoppy@163.com>
 
-# 安装环境
+# 瀹夎鐜
 
 RUN yum updata -Y && \
     yum install -y gcc gcc-c++ openssl-devel mariadb* git make

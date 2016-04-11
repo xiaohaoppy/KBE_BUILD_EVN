@@ -14,4 +14,4 @@ ADD build.sh /
 
 VOLUME ["/kbengine"]
 
-CMD ["sh /build.sh"]
+CMD ["sh", "/build.sh"]

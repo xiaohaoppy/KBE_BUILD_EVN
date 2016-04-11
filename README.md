@@ -10,7 +10,5 @@ cd KBE_BUILD_EVN
 
 docker build -t xiaohaoppy/kbe-build-env .
 
-docker run -v /home/kbengine/:/kbengine xiaohaoppy/kbe-build-env
+docker run -v /home/kbengine/kbe/bin:/kbengine/kbe/bin xiaohaoppy/kbe-build-env
 ```
-
-执行完在你的/home/kbengine/目录就已编译完成kbe。

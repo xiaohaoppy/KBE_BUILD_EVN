@@ -1,6 +1,6 @@
 # KBE_BUILD_EVN
 #
-# VERSION               0.0.1
+# VERSION               0.0.2
 
 FROM centos
 MAINTAINER haixiao <xiaohaoppy@163.com>
@@ -10,6 +10,7 @@ MAINTAINER haixiao <xiaohaoppy@163.com>
 RUN yum update -y
 RUN yum install -y gcc gcc-c++ openssl-devel mariadb-devel git make
 RUN git clone https://github.com/kbengine/kbengine.git
+RUN yum clean all
 ADD build.sh /
 
 VOLUME ["/kbengine"]
